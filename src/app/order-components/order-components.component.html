@@ -1,0 +1,71 @@
+<div class="container">
+  <form>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="form-group is-empty">
+          <label class="control-label">Select Vendor</label>
+          <select name="qualification" #Vendor="ngModel" class="form-control" ngModel required>
+            <option value="" disabled> Choose Vendor </option>
+            <option value="vendor1"> Vendor 1 </option>
+          </select>
+          <!-- <div *ngIf="Vendor.errors && Vendor.touched" class="alert text-danger">
+            <div [hidden]="!Vendor.errors.required">
+              * Choose vendor
+            </div>
+          </div> -->
+          <span class="material-input"></span>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group is-empty">
+          <label class="control-label">Select Component</label>
+          <select name="qualification" #Component="ngModel" class="form-control" ngModel required>
+            <option value="" disabled> Choose Component </option>
+            <option value="component1"> Component 1 </option>
+          </select>
+          <!-- <div *ngIf="Component.errors && Component.touched" class="alert text-danger">
+            <div [hidden]="!Component.errors.required">
+              * Choose component
+            </div>
+          </div> -->
+          <span class="material-input"></span>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group is-empty">
+          <label class="control-label">Select Model</label>
+          <select name="qualification" #Model="ngModel" class="form-control" ngModel required>
+            <option value="" disabled> Choose Model </option>
+            <option value="model1"> Model 1 </option>
+          </select>
+          <!-- <div *ngIf="Model.errors && Model.touched" class="alert text-danger">
+            <div [hidden]="!Model.errors.required">
+              * Choose model
+            </div>
+          </div> -->
+          <span class="material-input"></span>
+        </div>
+      </div>
+      <div class="col-md-3">
+          <div class="form-group is-empty">
+              <label class="control-label">Qty</label>
+              <input type="text" name="quantity" #mothername="ngModel" class="form-control" ngModel required>
+              <!-- <div *ngIf="mothername.errors && mothername.touched" class="alert text-danger">
+                  <div [hidden]="!mothername.errors.required">
+                      * Enter Mothername
+                  </div>
+                  <div [hidden]="!name.errors.minlength">
+                      * Please fill atleast 4 character
+                  </div>
+              </div> -->
+              <span class="material-input"></span>
+          </div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-md-offset-4 col-md-4 text-center">
+            <button class="btn btn-primary btn-round" type="submit">Order component</button>
+        </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,79 @@
+<nav class="navbar navbar-primary navbar-fixed-top" id="sectionsNav">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-left">
+        <li class="dropdown" id="headerNavigationItems">
+          <a routerLink="/app/productions" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fas fa-car fa-lg"></i> Production Requests
+            <!-- <b class="caret"></b> -->
+          </a>
+          <!-- <ul class="dropdown-menu dropdown-with-icons">
+            <li>
+              <a routerLink="/app/addmission">
+                <i class="fas fa-user-plus fa-lg"></i> Addmission
+              </a>
+            </li>
+            <li>
+              <a routerLink="/app/tranferstudent">
+                <i class="fas fa-exchange-alt fa-lg"></i> Transfer
+              </a>
+            </li>
+          </ul> -->
+        </li>
+        <!-- <li>
+          <a routerLink="/app/allstudents">
+            <i class="fas fa-cart-plus fa-lg"></i> Order Components
+          </a>
+        </li> -->
+        <li class="dropdown" id="headerNavigationItems">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fas fa-chalkboard-teacher fa-lg"></i> Vendor
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu dropdown-with-icons">
+            <li>
+              <a routerLink="/app/ordercomps">
+                <i class="fas fa-cart-plus fa-lg"></i> Order Components
+              </a>
+            </li>
+            <li>
+              <a routerLink="/app/trackcomps">
+                <i class="fas fa-truck-moving fa-lg"></i> Track Components
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown" id="headerNavigationItems">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fas fa-user fa-lg"></i> kirupa
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu dropdown-with-icons">
+            <li>
+              <a routerLink="/login">
+                <i class="fas fa-power-off fa-lg"></i> Logout
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- <ul class="nav navbar-nav navbar-right"> -->
+
+        <!-- </ul> -->
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="section">
+  <router-outlet></router-outlet>
+</div>
